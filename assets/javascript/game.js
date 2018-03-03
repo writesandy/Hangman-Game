@@ -10,14 +10,14 @@ var words = ["chicken", "horse", "farmer", "haystack", "tractor"];
 //Key event listener to capture at keyDown
 
 document.addEventListener('keydown', (event) => {
-    var randomWord = 
-    words[Math.floor(Math.random()*words.length)];
-    document.body.innerHTML =randomWord;
-    console.log(randomWord)
+
 
     const keyName = event.key;
     console.log('keydown event\n\n' +keyName);
 })
+var randomWord = 
+words[Math.floor(Math.random()*words.length)];
+console.log(randomWord)
 
 //Random select of word at keyDown. capture first letter?
 
