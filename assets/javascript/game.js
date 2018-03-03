@@ -7,29 +7,36 @@ var words = ["chicken", "horse", "farmer", "haystack", "tractor"];
 
 
 
-//Key event listener to capture at keyDown
+//Random word selected
+var randomWord = words[Math.floor(Math.random()*words.length)];
+console.log(randomWord)
+
+//random word shown on screen as blank spaces
+
+const wordBlank = [];
+for (var i = 0; i < randomWord.length; i++); {
+    wordBlank[i] = "__";
+    var wordSpaces = document.getElementById("#blanks");
+    //append workdblank to wordspaces
+
+}
+console.log(wordBlank);
+
+// document.body.innerHTML = "___";
 
 document.addEventListener('keydown', (event) => {
-
-
     const keyName = event.key;
     console.log('keydown event\n\n' +keyName);
 })
-var randomWord = 
-words[Math.floor(Math.random()*words.length)];
-console.log(randomWord)
 
-//Random select of word at keyDown. capture first letter?
 
-// var randomWord = 
-//     words[Math.floor(Math.random()*words.length)];
-//     document.body.innerHTML =randomWord;
-//     console.log(randomWord)
-
-//How do I get underscores for each letter entry?
-
-//loop through letters in random word
-//if letter is correct enter in blank underscore & decrease number of guesses
-//if letter is not correct enter in incorrect guesses & decrease number of guesses
+// html for entry fields i.e., number of guesses remaining, section for incorrect word guesses
+// when key is struck start game
+// choose random word
+// place random word on screen as fillable lines
+// place word spaces on html page
+// user hits letter that is correct > decrease number of guesses > enter letter(s) on spaces
+// user hits letter that is not correct > decrease number of guesses > enter letter(s) to incorrect guesses
+//  
 
 
