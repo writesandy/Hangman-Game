@@ -17,6 +17,8 @@ const wordBlank = [];
 for (var i = 0; i < randomWord.length; i++); {
     wordBlank[i] = "__";
     var wordSpaces = document.getElementById("#blanks");
+    wordSpaces.appendChild("<div>___</div>")
+
     //append workdblank to wordspaces
 
 }
