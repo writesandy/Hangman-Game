@@ -9,20 +9,17 @@ var words = ["chicken", "horse", "farmer", "haystack", "tractor"];
 
 //Random word selected
 var randomWord = words[Math.floor(Math.random()*words.length)];
-console.log(randomWord)
 
-//random word shown on screen as blank spaces
 
-const wordBlank = [];
-for (var i = 0; i < randomWord.length; i++); {
-    wordBlank[i] = "__";
-    var wordSpaces = document.getElementById("#blanks");
-    wordSpaces.appendChild("<div>___</div>")
 
-    //append workdblank to wordspaces
+console.log(randomWord);
 
+
+for (var i=0; i < randomWord.length; i++) {
+    var wordBlanks = document.createElement("li");
+    wordBlanks.innerHTML = "__";
+    document.getElementById('blanks').appendChild(wordBlanks);
 }
-console.log(wordBlank);
 
 // document.body.innerHTML = "___";
 
