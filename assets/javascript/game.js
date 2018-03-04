@@ -21,12 +21,20 @@ for (var i=0; i < randomWord.length; i++) {
     document.getElementById('blanks').appendChild(wordBlanks);
 }
 
-// document.body.innerHTML = "___";
 
-document.addEventListener('keydown', (event) => {
-    const keyName = event.key;
-    console.log('keydown event\n\n' +keyName);
-})
+
+
+function getLetter () {
+    document.addEventListener('keydown', (event) => {
+        const keyName = event.key;
+        console.log('keydown event\n\n' +keyName);
+    })
+}
+
+
+
+
+
 
 
 // html for entry fields i.e., number of guesses remaining, section for incorrect word guesses
