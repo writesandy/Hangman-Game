@@ -2,16 +2,15 @@
 
 'use strict'
 
+// word variables
+    
 
 var words = ["chicken", "horse", "farmer", "haystack", "tractor"];
 
-
-
 //Random word selected
+
+
 var randomWord = words[Math.floor(Math.random()*words.length)];
-
-
-
 console.log(randomWord);
 
 
@@ -19,31 +18,26 @@ for (var i=0; i < randomWord.length; i++) {
     var wordBlanks = document.createElement("li");
     wordBlanks.innerHTML = "__";
     document.getElementById('blanks').appendChild(wordBlanks);
-}
+    }
 
 
 
+const compareWord = function () {
+document.addEventListener('keydown', (event) => {
+    const keyName = event.key;
+    console.log('keydown event\n\n' +keyName);
+    randomWord.search("keyName");
+    document.getElementById("badGuess").innerHTML = pos;
 
-function getLetter () {
-    document.addEventListener('keydown', (event) => {
-        const keyName = event.key;
-        console.log('keydown event\n\n' +keyName);
-    })
-}
-
-
-
+})
 
 
+};
+
+compareWord();
 
 
-// html for entry fields i.e., number of guesses remaining, section for incorrect word guesses
-// when key is struck start game
-// choose random word
-// place random word on screen as fillable lines
-// place word spaces on html page
-// user hits letter that is correct > decrease number of guesses > enter letter(s) on spaces
-// user hits letter that is not correct > decrease number of guesses > enter letter(s) to incorrect guesses
-//  
 
+// Create function 
+// using event listener use keyName and find if randomWord includes keyName
 
